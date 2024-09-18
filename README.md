@@ -1,5 +1,5 @@
 <h1>Fastwebsite</h1>
-<h3>基于 FastAPI + Vue3 + Naive UI 的现代化前后端分离开发平台，融合了 RBAC 权限管理、动态路由和 JWT 鉴权，助力中小型应用快速搭建，也可用于学习参考。</h3>
+<h3>基于 FastAPI + Vue3 + Naive UI 的现代化前后端分离开发平台，融合了 RBAC 权限管理、动态路由和 JWT 鉴权，助力中小型应用快速搭建。</h3>
 
 ### 特性
 - **最流行技术栈**：基于 Python 3.11 和 FastAPI 高性能异步框架，结合 Vue3 和 Vite 等前沿技术进行开发，同时使用高效的 npm 包管理器 pnpm。
@@ -95,10 +95,13 @@ pnpm dev
 │   │   └── v1            // 版本1的API接口
 │   │       ├── apis      // API相关接口
 │   │       ├── base      // 基础信息接口
+│   │       ├── copy      // 爬虫相关接口
 │   │       ├── menus     // 菜单相关接口
 │   │       ├── roles     // 角色相关接口
-│   │       └── users     // 用户相关接口
+│   │       ├── users     // 用户相关接口
+│   │       └── video     // 视频相关接口
 │   ├── controllers       // 控制器目录
+│   ├── copyweb           // 爬虫功能模块
 │   ├── core              // 核心功能模块
 │   ├── log               // 日志目录
 │   ├── models            // 数据模型目录
@@ -143,10 +146,12 @@ pnpm dev
         │   ├── http      // 封装axios
         │   └── storage   // 封装localStorage和sessionStorage
         └── views         // 视图/页面目录
+            ├── copy_site  // 爬虫界面
             ├── error-page // 错误页面
             ├── login      // 登录页面
             ├── profile    // 个人资料页面
             ├── system     // 系统管理页面
+            ├── top_menu   // 搭建页面
             └── workbench  // 工作台页面
 ```
 
