@@ -10,14 +10,14 @@
 
 
 ### 快速开始
-#### 方法一：dockerhub拉取镜像
+#### 方法一：dockerhub拉取镜像(暂不可用)
 
 ```sh
-docker pull mizhexiaoxiao/vue-fastapi-admin:latest 
-docker run -d --restart=always --name=vue-fastapi-admin -p 9999:80 mizhexiaoxiao/vue-fastapi-admin
+docker pull icebro7/fastwebsite:1.0 
+docker run -d --restart=always --name=fastwebsite -p 9999:80 icebro7/fastwebsite
 ```
 
-#### 方法二：dockerfile构建镜像
+#### 方法二：dockerfile构建镜像(暂不可用)
 ##### docker安装(版本17.05+)
 
 ```sh
@@ -25,21 +25,21 @@ yum install -y docker-ce
 systemctl start docker
 ```
 
-##### 构建镜像
+##### 构建镜像(暂不可用)
 
 ```sh
-git clone https://github.com/mizhexiaoxiao/vue-fastapi-admin.git
+git clone https://github.com/icebro7/fastwebsite.git
 cd vue-fastapi-admin
-docker build --no-cache . -t vue-fastapi-admin
+docker build --no-cache . -t fastwebsite
 ```
 
-##### 启动容器
+##### 启动容器(暂不可用)
 
 ```sh
-docker run -d --restart=always --name=vue-fastapi-admin -p 9999:80 vue-fastapi-admin
+docker run -d --restart=always --name=fastwebsite -p 9999:80 fastwebsite
 ```
 
-##### 访问
+##### 访问(暂不可用)
 
 http://localhost:3100
 
