@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammer Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .hammer-container {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hammer-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="89 12 150 160" class="page-graphic snapshot-hide" alt="" width="100%" height="100%">
+        <defs>
+            <clipPath id="hammer_svg__a">
+                <circle cy="115" r="102" cx="163"></circle>
+            </clipPath>
+            <clipPath id="hammer_svg__b">
+                <path fill="#fff" d="M61 13h204v160H61z"></path>
+            </clipPath>
+        </defs>
+        <g clip-path="url(#hammer_svg__a)">
+            <g clip-path="url(#hammer_svg__b)">
+                <path d="M265.56 114.9c0-56.55-45.84-102.39-102.39-102.39S60.78 58.35 60.78 114.9c0 .31.02.61.02.92h204.75c0-.31.01-.61.01-.92z" fill="#fafafa"></path>
+                <path d="M247.09 173.57c11.47-16.38 18.26-36.28 18.45-57.75H60.8c.19 21.47 6.98 41.37 18.45 57.75h167.84z" fill="#f4f4f4"></path>
+                <g>
+                    <g fill="none" stroke="#404041" stroke-width="2.578" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                        <path d="M128.36 172.96l3.86-12.22M130.78 159.82l3.24 1.25"></path>
+                    </g>
+                    <g transform="translate(20)">
+                        <animateTransform attributeType="XML" attributeName="transform" type="translate" begin="0s" dur="1s" from="0 -43" to="0 -43" repeatCount="indefinite" additive="sum"></animateTransform>
+                        <animateTransform id="hammer_svg__c" attributeType="XML" attributeName="transform" type="rotate" begin="0s" dur="1s" values="-21 380 195; -1 380 195; -1 380 195; -21 380 195;" keySplines="0 0 1 1; 0 0 1 1; 0.68 0.14 0.72 0.25;" keyTimes="0; 0.5; 0.6; 1" calcMode="spline" repeatCount="indefinite" additive="sum"></animateTransform>
+                        <path d="M187.63 65.04c-20.68-7.25-45.9 5.84-46.05 18.57-.08 6.38-3.42 9.15-6.74 10.33l-4.9-5.73-8.39 7.17 18.88 22.09 8.39-7.17c-.02-.15-8.56-8.16-1.61-13.13 7.77-5.55 19.94 12.84 22.57 15.94l10.52-8.99s-10.23-11.98-12.98-15.19c-2.75-3.2-2.85-9.01 5.84-12.99 7.5-3.43 35.31-3.6 14.47-10.9z" fill="#fff"></path>
+                        <path d="M173.16 75.94c4.27-1.96 15.11-2.85 19.82-4.61-20.47-7.76-40.5 7.11-46.02 18.58-4.61 9.59-13.65 14.24-15.39 15.42l9.73 11.38 7.31-6.25c-.45-.57-.9-1.22-1.31-1.93-2.09-2.66-5.1-7.8-.1-11.37 4.45-3.18 10.35 1.5 15.07 6.66 3.35 2.9 6.34 6.39 8.22 8.66l9.79-8.37s-10.23-11.98-12.98-15.19c-2.73-3.2-2.83-9 5.86-12.98z" fill="#d8d8d8"></path>
+                        <path d="M187.63 65.04c-20.68-7.25-45.9 5.84-46.05 18.57-.08 6.38-3.42 9.15-6.74 10.33l-4.9-5.73-8.39 7.17 18.88 22.09 8.39-7.17c-.02-.15-8.56-8.16-1.61-13.13 7.77-5.55 19.94 12.84 22.57 15.94l10.52-8.99s-10.23-11.98-12.98-15.19c-2.75-3.2-2.85-9.01 5.84-12.99 7.5-3.43 35.31-3.6 14.47-10.9z" fill="none" stroke="#404041" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                        <path d="M249.62 189.27l-6.41 5.48c-1.69 1.44-4.23 1.25-5.67-.44l-70.49-82.45 12.53-10.71 70.49 82.45a4.023 4.023 0 01-.45 5.67z" fill="#fff"></path>
+                        <path d="M249.52 189.36a4.15 4.15 0 00.46-5.85l-67.91-79.42c-.07.04-.14.07-.2.12l-2.25 1.92c-2.34 2-2.81 5.28-1.06 7.33l67.46 78.9 3.5-3z" fill="#15b75e"></path>
+                        <path d="M249.62 189.27l-6.41 5.48c-1.69 1.44-4.23 1.25-5.67-.44l-70.49-82.45 12.53-10.71 70.49 82.45a4.023 4.023 0 01-.45 5.67z" fill="none" stroke="#404041" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+                        <path fill="#fff" stroke="#404041" stroke-width="2.767" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M188.46 124.24l48.06 57"></path>
+                    </g>
+                    <path fill="none" stroke="#f0f0f1" stroke-width="2" stroke-miterlimit="10" d="M31.78 173.57h306.67"></path>
+                    <path fill="#fff" d="M235.56 174.57h48.31v23.68h-48.31z"></path>
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>
+
+</body>
+</html>
