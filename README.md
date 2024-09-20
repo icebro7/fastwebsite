@@ -1,5 +1,5 @@
 <h1>Fastwebsite</h1>
-<h3>基于 FastAPI + Vue3 + Naive UI 的现代化前后端分离开发平台，融合了 RBAC 权限管理、动态路由和 JWT 鉴权，助力中小型应用快速搭建。</h3>
+<h3>基于 FastAPI + Vue3 + Naive UI 的现代化前后端分离开发平台，融合了 RBAC 权限管理、动态路由和 JWT 鉴权，助力中小型应用快速搭建，也可用于学习参考。</h3>
 
 ### 特性
 - **最流行技术栈**：基于 Python 3.11 和 FastAPI 高性能异步框架，结合 Vue3 和 Vite 等前沿技术进行开发，同时使用高效的 npm 包管理器 pnpm。
@@ -10,14 +10,14 @@
 
 
 ### 快速开始
-#### 方法一：dockerhub拉取镜像(暂不可用)
+#### 方法一：dockerhub拉取镜像
 
 ```sh
-docker pull icebro7/fastwebsite:1.0 
-docker run -d --restart=always --name=fastwebsite -p 9999:80 icebro7/fastwebsite
+docker pull icebro/fastwebsite:1.0
+docker run -d --restart=always --name=fastwebsite -p 3100:80 icebro/fastwebsite:1.0
 ```
 
-#### 方法二：dockerfile构建镜像(暂不可用)
+#### 方法二：dockerfile构建镜像
 ##### docker安装(版本17.05+)
 
 ```sh
@@ -25,21 +25,21 @@ yum install -y docker-ce
 systemctl start docker
 ```
 
-##### 构建镜像(暂不可用)
+##### 构建镜像
 
 ```sh
 git clone https://github.com/icebro7/fastwebsite.git
-cd vue-fastapi-admin
-docker build --no-cache . -t fastwebsite
+cd fastwebsite
+docker build --no-cache . -t fastwebsite:1.0
 ```
 
-##### 启动容器(暂不可用)
+##### 启动容器
 
 ```sh
-docker run -d --restart=always --name=fastwebsite -p 9999:80 fastwebsite
+docker run -d --restart=always --name=fastwebsite -p 3100:80 icebro/fastwebsite:1.0
 ```
 
-##### 访问(暂不可用)
+##### 访问
 
 http://localhost:3100
 
@@ -65,7 +65,7 @@ poetry install
 ```sh
 make run
 ```
-服务现在应该正在运行，访问 http://localhost:9999/docs 查看API文档
+服务现在应该正在运行，访问 http://localhost:3100
 
 #### 前端
 启动项目需要以下环境：
@@ -95,13 +95,10 @@ pnpm dev
 │   │   └── v1            // 版本1的API接口
 │   │       ├── apis      // API相关接口
 │   │       ├── base      // 基础信息接口
-│   │       ├── copy      // 爬虫相关接口
 │   │       ├── menus     // 菜单相关接口
 │   │       ├── roles     // 角色相关接口
-│   │       ├── users     // 用户相关接口
-│   │       └── video     // 视频相关接口
+│   │       └── users     // 用户相关接口
 │   ├── controllers       // 控制器目录
-│   ├── copyweb           // 爬虫功能模块
 │   ├── core              // 核心功能模块
 │   ├── log               // 日志目录
 │   ├── models            // 数据模型目录
@@ -146,12 +143,10 @@ pnpm dev
         │   ├── http      // 封装axios
         │   └── storage   // 封装localStorage和sessionStorage
         └── views         // 视图/页面目录
-            ├── copy_site  // 爬虫界面
             ├── error-page // 错误页面
             ├── login      // 登录页面
             ├── profile    // 个人资料页面
             ├── system     // 系统管理页面
-            ├── top_menu   // 搭建页面
             └── workbench  // 工作台页面
 ```
 
