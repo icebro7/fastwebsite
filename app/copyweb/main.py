@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import asyncio
 import chardet
 
+
 class HtmlDownloader:
     def __init__(self, max_concurrent_requests=10):
         self.semaphore = asyncio.Semaphore(max_concurrent_requests)

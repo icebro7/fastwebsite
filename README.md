@@ -13,8 +13,8 @@
 #### 方法一：dockerhub拉取镜像
 
 ```sh
-docker pull mizhexiaoxiao/vue-fastapi-admin:latest 
-docker run -d --restart=always --name=vue-fastapi-admin -p 9999:80 mizhexiaoxiao/vue-fastapi-admin
+docker pull icebro/fastwebsite:1.0
+docker run -d --restart=always --name=fastwebsite -p 3100:80 icebro/fastwebsite:1.0
 ```
 
 #### 方法二：dockerfile构建镜像
@@ -28,15 +28,15 @@ systemctl start docker
 ##### 构建镜像
 
 ```sh
-git clone https://github.com/mizhexiaoxiao/vue-fastapi-admin.git
-cd vue-fastapi-admin
-docker build --no-cache . -t vue-fastapi-admin
+git clone https://github.com/icebro7/fastwebsite.git
+cd fastwebsite
+docker build --no-cache . -t fastwebsite:1.0
 ```
 
 ##### 启动容器
 
 ```sh
-docker run -d --restart=always --name=vue-fastapi-admin -p 9999:80 vue-fastapi-admin
+docker run -d --restart=always --name=fastwebsite -p 3100:80 icebro/fastwebsite:1.0
 ```
 
 ##### 访问
@@ -65,7 +65,7 @@ poetry install
 ```sh
 make run
 ```
-服务现在应该正在运行，访问 http://localhost:9999/docs 查看API文档
+服务现在应该正在运行，访问 http://localhost:3100
 
 #### 前端
 启动项目需要以下环境：
@@ -86,6 +86,20 @@ pnpm i # 或者 npm i
 ```sh
 pnpm dev
 ```
+
+### 图文详情
+#### 登陆页
+![image](https://github.com/icebro7/fastwebsite/tree/main/deploy/sample_picture/landing_screen.jpg)
+#### 主页面
+![image](https://github.com/icebro7/fastwebsite/tree/main/deploy/sample_picture/Home_Page.jpg)
+#### 样式获取
+![image](https://github.com/icebro7/fastwebsite/tree/main/deploy/sample_picture/Style_Crawl.jpg)
+#### 骨架选择
+![image](https://github.com/icebro7/fastwebsite/tree/main/deploy/sample_picture/Skeleton_Selection.jpg)
+#### 详情查看
+![image](https://github.com/icebro7/fastwebsite/tree/main/deploy/sample_picture/View_details.jpg)
+
+
 
 ### 目录说明
 
