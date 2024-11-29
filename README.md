@@ -66,6 +66,7 @@ poetry install
 make run
 ```
 服务现在应该正在运行，访问 http://localhost:3100
+接口文档：http://localhost:9999/docs#/
 
 #### 前端
 启动项目需要以下环境：
